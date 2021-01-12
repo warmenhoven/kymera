@@ -1,0 +1,117 @@
+<devicedata>
+  <version>5</version>
+  <manufacturer>The Wand Company</manufacturer>
+  <model>Kymera</model>
+  <creator>Eric Warmenhoven (eric@warmenhoven.org)</creator>
+  <name>Kymera</name>
+  <small>devices_sm/C4.gif</small>
+  <large>devices_lg/C4.gif</large>
+  <control>lua_gen</control>
+  <controlmethod>ip</controlmethod>
+  <driver>DriverWorks</driver>
+  <copyright>Public Domain</copyright>
+  <created>01/10/2021 7:08 PM</created>
+  <modified>01/12/2021 1:19 PM</modified>
+  <combo>true</combo>
+  <proxies qty="1">
+    <proxy>kymera</proxy>
+  </proxies>
+  <config>
+    <script file="driver.lua"></script>
+    <documentation file="www/doc.rtf" />
+    <properties>
+      <property>
+        <name>Debug Mode</name>
+        <type>LIST</type>
+        <items>
+          <item>Off</item>
+          <item>On</item>
+        </items>
+        <default>Off</default>
+      </property>
+      <property>
+        <name>IPAddress</name>
+        <type>STRING</type>
+        <default></default>
+        <readonly>true</readonly>
+      </property>
+    </properties>
+  </config>
+  <events>
+    <event>
+      <id>1</id>
+      <name>Rotate anticlockwise</name>
+      <description>Wand is rotated anticlockwise</description>
+    </event>
+    <event>
+      <id>2</id>
+      <name>Rotate clockwise</name>
+      <description>Wand is rotated clockwise</description>
+    </event>
+    <event>
+      <id>3</id>
+      <name>Flick upwards</name>
+      <description>Wand is flicked upwards</description>
+    </event>
+    <event>
+      <id>4</id>
+      <name>Flick downwards</name>
+      <description>Wand is flicked downwards</description>
+    </event>
+    <event>
+      <id>5</id>
+      <name>Flick left</name>
+      <description>Wand is flicked left</description>
+    </event>
+    <event>
+      <id>6</id>
+      <name>Flick right</name>
+      <description>Wand is flicked right</description>
+    </event>
+    <event>
+      <id>7</id>
+      <name>Tap on top</name>
+      <description>Wand is tapped on top</description>
+    </event>
+    <event>
+      <id>8</id>
+      <name>Tap on side</name>
+      <description>Wand is tapped on side</description>
+    </event>
+    <event>
+      <id>9</id>
+      <name>Big Swish</name>
+      <description>Wand is swished</description>
+    </event>
+    <event>
+      <id>10</id>
+      <name>Push forward</name>
+      <description>Wand is pushed forward</description>
+    </event>
+    <event>
+      <id>11</id>
+      <name>Double tap on top</name>
+      <description>Wand is double tapped on top</description>
+    </event>
+    <event>
+      <id>12</id>
+      <name>Double tap on side</name>
+      <description>Wand is double tapped on side</description>
+    </event>
+    <event>
+      <id>13</id>
+      <name>Pull Back</name>
+      <description>Wand is pulled back</description>
+    </event>
+    <event>
+      <id>14</id>
+      <name>Discovered</name>
+      <description>Wand is discovered</description>
+    </event>
+    <event>
+      <id>15</id>
+      <name>Offline</name>
+      <description>Wand disappears</description>
+    </event>
+  </events>
+</devicedata>
